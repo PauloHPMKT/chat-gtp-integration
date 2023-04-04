@@ -1,9 +1,9 @@
 import axios from "axios";
 
-const OPENAI_API_KEY = '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'
+const OPENAI_API_KEY = process.env.SECRET_API_KEY
 
 export const http = axios.create({
-	baseURL: 'https://api.openai.com/v1/completions',
+	baseURL: process.env.BASE_URL_API,
 	headers: {
 		Accept: "application/json",
 		"Content-Type": "application/json",
