@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chat GPT</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<aside>
+			<span>
+				<button>
+					<i class="fa-solid fa-plus"></i>
+					<span>New chat</span>
+				</button>
+				<div class="list-subjects">
+				</div>
+			</span>
+		</aside>
+    <main class="content">
+			<div class="chat-box">
+				<div class="area-response">
+					<textarea id="result" rows="10" disabled></textarea>
+				</div>
+				<div class="area-question">
+					<div class="input-question">
+						<input type="text" id="question" placeholder="Pergunte algo"></textarea>
+						<i class="fa-light fa-paper-plane-top"></i>
+					</div>
+				</div>
+			</div>
+    </main>
+	</div>
+		<!--<script src="https://unpkg.com/axios/dist/axios.min.js"></script>-->
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
